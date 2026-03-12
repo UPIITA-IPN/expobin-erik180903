@@ -11,9 +11,8 @@ def exponenciacion_binaria(M, e, n):
         if ei == '1':
             C = (C * M) % n
     return C
-M_val = 2
-e_val = 1234
-n_val = 789
-resultado = exponenciacion_binaria(M_val, e_val, n_val)
+M = int(sys.stdin.read().strip())
+e = int(sys.argv[1])
+n = int(sys.argv[2])
 
-print(f"{resultado}")
+print(exponenciacion_binaria(M, e, n))
