@@ -11,8 +11,9 @@ def exponenciacion_binaria(M, e, n):
         if ei == '1':
             C = (C * M) % n
     return C
-M_val = int(input("Introduce la base: "))
-e_val = int(input("Introduce el exponente: "))
-n_val = int(input("Introduce el módulo: "))
+M_val = 2
+e_val = 1234
+n_val = 789
 resultado = exponenciacion_binaria(M_val, e_val, n_val)
-print(f"El resultado es: {resultado}")
+
+print(f"{resultado}")
