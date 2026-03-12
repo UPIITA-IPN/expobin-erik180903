@@ -18,8 +18,9 @@ def exponenciacion_binaria(M, e, n):
     return C
 
 
-M = int(sys.stdin.read().strip())
-e = int(sys.argv[1])
-n = int(sys.argv[2])
+datos = sys.stdin.read().split()
+M = int(datos[0])
+e = int(datos[1])
+n = int(datos[2])
 
 print(exponenciacion_binaria(M, e, n))
